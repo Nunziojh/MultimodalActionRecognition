@@ -1,28 +1,8 @@
-# Starting code for [course project](https://docs.google.com/document/d/12SDMbO3MgdawRx1C6XhHFtmAwzCXgpGQTElbGx4Qm78/edit?usp=sharing) of Advanced Machine Learning (AML) 2023
+# Multimodal Action Recognition
 
-## Getting started
+Project done for the Advanced Machine Learning course at Politecnico di Torino, by Nunzio Messineo with the collaboration of Federico Buccellato and Raffaele Viola, started from a given base project.
 
-You can play around with the code on your local machine, and use Google Colab for training on GPUs. 
-In all the cases it is necessary to have the reduced version of the dataset where you are running the code. For simplicity, we inserted just the necessary frames at [this link](https://drive.google.com/drive/u/1/folders/1dJOtZ07WovP3YSCRAnU0E4gsfqDzpMVo).
+This project explores action recognition using two modalities: standard visual data (RGB streams) and ElectroMyoGraphy (EMG). The initial phase focuses on analyzing first-person perspective RGB data using a state-of-the-art action recognition algorithm. The next phase introduces EMG, a lesser-explored modality in computer vision, to investigate its potential in enhancing action classification. By combining visual and muscle activity data, the project aims to develop a more comprehensive understanding of human actions and improve recognition performance in challenging scenarios.
 
-Before starting to implement your own code, make sure to:
-1. read and study the material provided
-2. understand how all the scripts are working and interacting
-3. get familiar with the structure of the [EPIC-KITCHENS dataset](https://epic-kitchens.github.io/2022), what a sample, a clip and a frame are
-4. play around with the code in the template to familiarize with all the tools.
-
-### 1. Local
-
-You can work on your local machine directly, the code which needs to be run does not require heavy computations. 
-In order to do so a file with all the requirements for the python environment is provided [here](requirements.yaml), it contains even more packages than the strictly needed ones so if you want to install everything step-by-step just be careful to use pytorch 1.12 and torchvision 0.13. 
-
-### 2. Google Colab
-
-You can also run the code on [Google Colab](https://colab.research.google.com/).
-
-- Upload all the scripts in this repo.
-- Prepare a proper notebook structured as the `train_classifier.py` script.
-
-As a reference, `colab_runner.ipynb` provides an example of how to set up a working environment in Google Colab.
-
-NOTE: you need to stay connected to the Google Colab interface at all times for your python scripts to keep training.
+For more information read the [paper](https://github.com/Nunziojh/MultimodalActionRecognition/blob/main/paper.pdf)
+Here there are the slides of the [presentation](https://www.canva.com/design/DAGQYb7wKdw/A_3D7ZRhG1OQV0yqkcgOAw/edit?utm_content=DAGQYb7wKdw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
